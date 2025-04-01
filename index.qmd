@@ -1,0 +1,67 @@
+---
+format: 
+  revealjs:
+    slide-number: true
+    # code-link: true
+    highlight-style: a11y
+    chalkboard: true
+    theme: 
+      - meds-slides-styles.scss
+editor_options: 
+  chunk_output_type: console
+---
+
+
+## {#title-slide data-menu-title="Title Slide" background="#053660"}
+
+[Data Storytelling]{.custom-title}
+
+<hr class="hr-teal">
+
+[Bren Environmental Leadership Program | Summer 2025]{.custom-subtitle3}
+
+---
+
+[delete later (random notes / thoughts)]{.slide-title}
+
+- **objective:** begin crafting compelling data stories for BEL project research questions and data; focus on storytelling principles (rather than the technical approaches)
+
+---
+
+## {#tbd data-menu-title="tbd"}
+
+[Hello!]{.slide-title}
+
+(5 min)
+
+- who am I / what is my role / background?
+  - include head shot
+  - undergrad > receptionist / confusion about what I wanted to do in life > grad school > more confusion about what I wanted to do in life > data fellow > MEDS program coordination / teaching
+  - teach a data viz course
+  - personal interests separate from work
+  
+---
+
+[Learning objectives]{.slide-title}
+
+(5 min)
+
+- storytelling is so important for connecting audiences with data
+  - makes data meaningful, actionable (use quotes / TED talk clips from [EDS 240 slide](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.1-data-stories-slides.html#/why-storytelling))
+- as environmental leaders, this is so important >> (Learning objectives) today, we'll consider what is data storytelling, what can it look like (in the context of environmental science), and begin crafting your own data stories based on your BEL research projects
+
+---
+
+[What is data storytelling?]{.slide-title}
+
+- in the context of environmental science?
+
+- different mediums (data viz, oral talks, academic journal articles, blogs / writing) -- all require a clear narrative to connect with your intended audience
+  - anytime we present data, we have the opportunity to tell a story
+ 
+---
+
+[Let's look at some examples]{.slide-title}
+
+
+- [ ]()
