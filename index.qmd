@@ -20,11 +20,6 @@ editor_options:
 
 [Bren Environmental Leadership Program | Summer 2025]{.custom-subtitle3}
 
----
-
-[delete later (random notes / thoughts)]{.slide-title}
-
-- **objective:** begin crafting compelling data stories for BEL project research questions and data; focus on storytelling principles (rather than the technical approaches)
 
 ---
 
@@ -40,28 +35,125 @@ editor_options:
   - teach a data viz course
   - personal interests separate from work
   
+<!-- --- -->
+
+<!-- [Learning objectives]{.slide-title} -->
+
+<!-- (5 min) -->
+
+<!-- - storytelling is so important for connecting audiences with data -->
+<!--   - makes data meaningful, actionable (use quotes / TED talk clips from [EDS 240 slide](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.1-data-stories-slides.html#/why-storytelling)) -->
+<!-- - today, we'll consider  -->
+<!--   - what is data storytelling -->
+<!--   - what can it look like (in the environmental sciences) -->
+<!--   - begin crafting your own data stories based on your BEL research projects -->
+
+<!-- --- -->
+
+<!-- [What is data storytelling?]{.slide-title} -->
+
+<!-- - communicating insights from data using narratives and visualizations -->
+<!--   - in environmental science? using data to create compelling narratives about environmental issues -->
+<!-- - anytime we present data, we have the opportunity to tell a story -->
+<!-- - three key elements:  -->
+<!--   - add context: make it relevant / mean something for *your* audience, narrative, visuals (data viz) -->
+
+<!-- - different mediums (standalone data viz, oral talks, academic journal articles, blogs / popsci or creative writing) -- all require a clear narrative to connect with your intended audience -->
+
+<!-- --- -->
+
+<!-- [Discussion - crafting a story premise]{.slide-title} -->
+
+<!-- (15 min) -->
+
+<!-- Individually  -->
+<!-- - what is your research question? -->
+<!-- - what data are you working with? -->
+<!-- - brainstorm the following:  -->
+<!--   - who are the characters? -->
+<!--   - what is main conflict or challenge? -->
+<!--   - what insights do the data provide> -->
+<!--   - what action do you want to inspire? -->
+
+<!--   With a partner:  -->
+<!--   - share your responses -->
+
+<!-- --- -->
+
 ---
 
-[Learning objectives]{.slide-title}
+Have you ever seen a data visualization that changed how you think about an issue?
 
-(5 min)
+. . . 
 
-- storytelling is so important for connecting audiences with data
-  - makes data meaningful, actionable (use quotes / TED talk clips from [EDS 240 slide](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.1-data-stories-slides.html#/why-storytelling))
-- as environmental leaders, this is so important >> (Learning objectives) today, we'll consider what is data storytelling, what can it look like (in the context of environmental science), and begin crafting your own data stories based on your BEL research projects
+- [Warming Stripes](https://showyourstripes.info/)
+- [Global Temperatures](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.2-people-as-data-slides.html#/ipcc2), IPCC 2023
+- [Canadian Wildfires](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.1-data-stories-slides.html#/can-fires)
+- etc.
 
 ---
 
-[What is data storytelling?]{.slide-title}
+Deliverable: an outlined data story based on your BEL research project 
 
-- in the context of environmental science?
-
-- different mediums (data viz, oral talks, academic journal articles, blogs / writing) -- all require a clear narrative to connect with your intended audience
-  - anytime we present data, we have the opportunity to tell a story
- 
 ---
 
-[Let's look at some examples]{.slide-title}
+Need to understand:
+
+- **what** is data storytelling?
+- **why** is it important? for environmental scientists?
+- **how** do you approach crafting a data story?
+
+---
+
+**what** is data storytelling?
+
+- communicating insights from data using narratives and visualizations
+
+---
+
+**why** is it important? for environmental scientists?
+
+- storytelling makes data meaningful, actionable (use quotes / TED talk clips from [EDS 240 slide](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.1-data-stories-slides.html#/why-storytelling))
+
+*anytime we present data, we have the opportunity to tell a story*
+
+---
+
+**how** do you approach crafting a data story
+
+1. define your intended **audience** (e.g. domain experts / researchers, policy makers, general public)
+2. consider your **narrative**
+3. build your **visuals**
+4. **highlight takeaways**
+
+---
+
+[audience]{.slide-title}
+
+- which story is interesting for them?
+- what are the relevant details to include?
+- which variables are meaningful to them?
+- how will they encounter this information? e.g. data viz (online, in print, etc), oral talk, academic journal article, blog / creative writing?
+
+---
+
+[narrative]{.slide-title}
+
+---
+
+[visuals]{.slide-title}
+
+  - consider data types (include [allison's art](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture2.1-choosing-graphic-forms-slides.html#/cat-disc2))
+  - use decision tree: [from data to viz](https://www.data-to-viz.com/)
+
+---
+
+[highlight takeaways]{.slide-title}
+
+- colors 
+  - highlight groups / data points of interest
+  - consider how colors convey information e.g. [Colors in Culture](https://informationisbeautiful.net/visualizations/colours-in-cultures/)
+- typefaces / visual hierarchy
+- annotations
 
 
-- [ ]()
