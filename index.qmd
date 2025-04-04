@@ -354,8 +354,9 @@ Need to understand:
 
 [visuals]{.slide-title}
 
-  - consider data types (include [allison's art](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture2.1-choosing-graphic-forms-slides.html#/cat-disc2))
-  - use decision tree: [from data to viz](https://www.data-to-viz.com/)
+- consider data types (include [allison's art](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture2.1-choosing-graphic-forms-slides.html#/cat-disc2))
+- use decision tree: [from data to viz](https://www.data-to-viz.com/)
+- but also don't limit yourself to just these options!
 
 ---
 
