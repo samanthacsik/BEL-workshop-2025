@@ -79,17 +79,227 @@ editor_options:
 <!--   - share your responses -->
 
 <!-- --- -->
+---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+::: {.center-text .body-text-xl .teal-text}
+**What first comes to mind when you think of the term, "data visualization?"**
+:::
 
 ---
 
-Have you ever seen a data visualization that changed how you think about an issue?
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+::: {.center-text .body-text-xl .teal-text}
+**Have you ever seen a data visualization that changed how you think about an issue?**
+:::
+
+---
+
+<br>
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics(here::here("images", "hawkins-warming-stripes.png"))
+```
+
+::: {.footer}
+[Warming Stripes](https://showyourstripes.info/), by Ed Hawkins
+:::
+
+---
+
+<br>
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics(here::here("images", "ipcc-temps.png"))
+```
+
+::: {.footer}
+Figure SPM.1c of the [Climate Change 2023 Synthesis Report](https://showyourstripes.info/), by the Intergovernmental Panel on Climate Change (IPCC)
+:::
+
+---
+
+<br>
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics(here::here("images", "magtulis-canada-fires.png"))
+```
+
+::: {.footer}
+[Canadian Wildfires (2023)](https://x.com/prinzmagtulis/status/1693684342818574675), by Prinz Magtulis (Reuters)
+:::
+
+---
+
+<br>
+<br>
+<br>
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics(here::here("images", "chalabi-vaquitas.png"))
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics(here::here("images", "chalabi-kingfishers.png"))
+```
+:::
+::::
+
+::: {.footer}
+[Endangered Species that could (almost) fit in a single train carriage (Vaquitas)](https://www.theguardian.com/environment/gallery/2018/sep/17/endangered-species-on-a-train), by Mona Chalabi
+:::
+
+---
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+::: {.center-text .body-text-xl .teal-text}
+**What about these data visualizations grab your attention? Help you to see the information in a different way? Move you?**
+:::
+
+::: {.notes}
+- simplicity
+- context
+- annotations
+- visually-pleasing
+- relatable
+:::
+
+---
+
+<br>
+
+```{r}
+library(tidyverse)
+endangered_spp <- tribble(
+  ~spp, ~n,
+  "Javan Rhinos", 63,
+  "Amur Leopards", 60,
+  "Oryx Dammahs", 50,
+  "Christmas Island Geckos", 43,
+  "Burmese Roofed Turtles", 40,
+  "Vaquitas", 30,
+  "Guam Kingfishers", 29
+)
+
+endangered_spp |> 
+  mutate(spp = fct_reorder(spp, n)) |> 
+  ggplot(aes(x = n, y = spp)) +
+  geom_col() +
+  labs(title = "Endangered Species",
+       x = "Number of Remaining Individuals",
+       caption = "Data Source: IUCN Red List (2018)") +
+  theme(
+    axis.title.y = element_blank(),
+    plot.caption = element_text(face = "italic")
+  )
+```
+
 
 . . . 
 
-- [Warming Stripes](https://showyourstripes.info/)
-- [Global Temperatures](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.2-people-as-data-slides.html#/ipcc2), IPCC 2023
-- [Canadian Wildfires](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.1-data-stories-slides.html#/can-fires)
-- etc.
+::: {.center-text .body-text-xl}
+versus...
+:::
+
+---
+
+<br>
+<br>
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics(here::here("images", "chalabi-vaquitas.png"))
+```
+:::
+
+::: {.column width="50%"}
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics(here::here("images", "chalabi-kingfishers.png"))
+```
+:::
+::::
+
+::: {.footer}
+[Endangered Species that could (almost) fit in a single train carriage (Vaquitas)](https://www.theguardian.com/environment/gallery/2018/sep/17/endangered-species-on-a-train), by Mona Chalabi
+:::
+
+---
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics(here::here("images", "ipcc-half.png"))
+```
+
+---
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics(here::here("images", "ipcc-full.png"))
+```
 
 ---
 
@@ -107,15 +317,16 @@ Need to understand:
 
 **what** is data storytelling?
 
-- communicating insights from data using narratives and visualizations
+- communicating insights from data using compelling narratives and visualizations
 
 ---
 
-**why** is it important? for environmental scientists?
+**why** is it important? 
 
-- storytelling makes data meaningful, actionable (use quotes / TED talk clips from [EDS 240 slide](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.1-data-stories-slides.html#/why-storytelling))
+- “…the very act of telling a story makes people trust you more… Data doesn’t change behavior, emotions do” (-Karen Eber in her TED talk, Why storytelling is more trustworthy than presenting data)
+- 3% of people will walk away from here remembering a stat, 68% of people will remember the story"; "stories create action"; "people act on the back of stories, whereas stats are just stale" (-Mike Bugembe in his TED talk, Lies, racism and sexism: The power of data stories)
 
-*anytime we present data, we have the opportunity to tell a story*
+(use quotes / TED talk clips from [EDS 240 slide](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.1-data-stories-slides.html#/why-storytelling))
 
 ---
 
@@ -155,5 +366,6 @@ Need to understand:
   - consider how colors convey information e.g. [Colors in Culture](https://informationisbeautiful.net/visualizations/colours-in-cultures/)
 - typefaces / visual hierarchy
 - annotations
+- images
 
 
