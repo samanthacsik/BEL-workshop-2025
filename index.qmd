@@ -20,20 +20,34 @@ editor_options:
 
 [Bren Environmental Leadership Program | Summer 2025]{.custom-subtitle3}
 
-
 ---
 
 ## {#tbd data-menu-title="tbd"}
 
 [Hello!]{.slide-title}
 
-(5 min)
+<hr>
 
-- who am I / what is my role / background?
-  - include head shot
-  - undergrad > receptionist / confusion about what I wanted to do in life > grad school > more confusion about what I wanted to do in life > data fellow > MEDS program coordination / teaching
-  - teach a data viz course
-  - personal interests separate from work
+:::: {.columns}
+
+::: {.column width="50%"}
+<br>
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "80%"
+#| fig-align: "center"
+knitr::include_graphics(here::here("images", "sam.png"))
+```
+:::
+
+::: {.column width="50%"}
+- career journey: undergrad > receptionist / confusion about what I wanted to do in life > grad school > more confusion about what I wanted to do in life > data fellow > MEDS program coordination / teaching
+- teach a data viz course
+- personal interests separate from work
+:::
+
+::::
   
 <!-- --- -->
 
@@ -116,6 +130,22 @@ editor_options:
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
+knitr::include_graphics(here::here("images", "mann-hockeystick.png"))
+```
+
+::: {.footer}
+[Hockey stick graph](https://www.psu.edu/news/research/story/iconic-graph-center-climate-debate), by Michael Mann & IPCC 2001
+:::
+
+---
+
+<br>
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
 knitr::include_graphics(here::here("images", "hawkins-warming-stripes.png"))
 ```
 
@@ -125,14 +155,12 @@ knitr::include_graphics(here::here("images", "hawkins-warming-stripes.png"))
 
 ---
 
-<br>
-
 ```{r}
 #| eval: true
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics(here::here("images", "ipcc-temps.png"))
+knitr::include_graphics(here::here("images", "ipcc-half.png"))
 ```
 
 ::: {.footer}
@@ -141,53 +169,67 @@ Figure SPM.1c of the [Climate Change 2023 Synthesis Report](https://showyourstri
 
 ---
 
-<br>
-
 ```{r}
 #| eval: true
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics(here::here("images", "magtulis-canada-fires.png"))
+knitr::include_graphics(here::here("images", "ipcc-full.png"))
 ```
 
 ::: {.footer}
-[Canadian Wildfires (2023)](https://x.com/prinzmagtulis/status/1693684342818574675), by Prinz Magtulis (Reuters)
+Figure SPM.1c of the [Climate Change 2023 Synthesis Report](https://showyourstripes.info/), by the Intergovernmental Panel on Climate Change (IPCC)
 :::
 
----
+<!-- --- -->
 
-<br>
-<br>
-<br>
-<br>
+<!-- <br> -->
 
-:::: {.columns}
+<!-- ```{r} -->
+<!-- #| eval: true -->
+<!-- #| echo: false -->
+<!-- #| fig-align: "center" -->
+<!-- #| out-width: "100%" -->
+<!-- knitr::include_graphics(here::here("images", "magtulis-canada-fires.png")) -->
+<!-- ``` -->
 
-::: {.column width="50%"}
-```{r}
-#| eval: true
-#| echo: false
-#| fig-align: "center"
-#| out-width: "100%"
-knitr::include_graphics(here::here("images", "chalabi-vaquitas.png"))
-```
-:::
+<!-- ::: {.footer} -->
+<!-- [Canadian Wildfires (2023)](https://x.com/prinzmagtulis/status/1693684342818574675), by Prinz Magtulis (Reuters) -->
+<!-- ::: -->
 
-::: {.column width="50%"}
-```{r}
-#| eval: true
-#| echo: false
-#| fig-align: "center"
-#| out-width: "100%"
-knitr::include_graphics(here::here("images", "chalabi-kingfishers.png"))
-```
-:::
-::::
+<!-- --- -->
 
-::: {.footer}
-[Endangered Species that could (almost) fit in a single train carriage (Vaquitas)](https://www.theguardian.com/environment/gallery/2018/sep/17/endangered-species-on-a-train), by Mona Chalabi
-:::
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
+<!-- <br> -->
+
+<!-- :::: {.columns} -->
+
+<!-- ::: {.column width="50%"} -->
+<!-- ```{r} -->
+<!-- #| eval: true -->
+<!-- #| echo: false -->
+<!-- #| fig-align: "center" -->
+<!-- #| out-width: "100%" -->
+<!-- knitr::include_graphics(here::here("images", "chalabi-vaquitas.png")) -->
+<!-- ``` -->
+<!-- ::: -->
+
+<!-- ::: {.column width="50%"} -->
+<!-- ```{r} -->
+<!-- #| eval: true -->
+<!-- #| echo: false -->
+<!-- #| fig-align: "center" -->
+<!-- #| out-width: "100%" -->
+<!-- knitr::include_graphics(here::here("images", "chalabi-kingfishers.png")) -->
+<!-- ``` -->
+<!-- ::: -->
+<!-- :::: -->
+
+<!-- ::: {.footer} -->
+<!-- [Endangered Species that could (almost) fit in a single train carriage (Vaquitas)](https://www.theguardian.com/environment/gallery/2018/sep/17/endangered-species-on-a-train), by Mona Chalabi -->
+<!-- ::: -->
 
 ---
 
@@ -280,26 +322,6 @@ knitr::include_graphics(here::here("images", "chalabi-kingfishers.png"))
 ::: {.footer}
 [Endangered Species that could (almost) fit in a single train carriage (Vaquitas)](https://www.theguardian.com/environment/gallery/2018/sep/17/endangered-species-on-a-train), by Mona Chalabi
 :::
-
----
-
-```{r}
-#| eval: true
-#| echo: false
-#| fig-align: "center"
-#| out-width: "100%"
-knitr::include_graphics(here::here("images", "ipcc-half.png"))
-```
-
----
-
-```{r}
-#| eval: true
-#| echo: false
-#| fig-align: "center"
-#| out-width: "100%"
-knitr::include_graphics(here::here("images", "ipcc-full.png"))
-```
 
 ---
 
