@@ -1,0 +1,187 @@
+/*-- scss:defaults --*/
+
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+// fonts
+$josefin: 'Josefin Sans', sans-serif;
+$nunito: 'Nunito', sans-serif;
+$source-sans: 'Source Sans 3', sans-serif;
+
+// colors
+$baby-blue: #d2e3f3;
+$teal: #047C90;
+$dark-blue: #003660;
+$white: #FFFFFF;
+$green: #78A540;
+$gold: #FEBC11; 
+$magenta: #900C3F;
+$white: #FFFFFF;
+$off-white: #F7F7F7;
+$gray: #ADADAD;
+$medium-gray: #90959c;
+$dark-gray: #373A3E;
+$peach: #DF8073;
+
+// scss variables
+$presentation-title-slide-text-align: "left";
+$body-bg: $white;
+$link-color: $green;
+$code-color: $magenta;
+$code-bg: $off-white;  
+$code-block-font-size: 0.8em;
+$code-block-bg: $off-white;
+$presentation-font-size-root: 25px;
+
+/*-- scss:rules --*/
+
+p {
+  line-spacing: 1px
+}
+
+// bold styling
+strong, b {
+  font-weight: 900;
+}
+
+// horizontal line (default dark blue)
+hr {
+  border: 4px solid $dark-blue;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+// teal horizontal line
+.hr-teal {
+  border: 4px solid $teal;
+}
+
+// custom slide title
+.custom-title {
+  font-family: $josefin;
+  color: $baby-blue;
+  font-size: 3em; //1.7em;
+  //position: absolute;
+  left: 20px;
+}
+
+// cover slide subtitle (large)
+.custom-subtitle {
+  font-family: $josefin;
+  color: $baby-blue;
+  font-size: 2.4em;
+  left: 20px;
+}
+
+// cover slide subtitle (medium)
+.custom-subtitle2 {
+  font-family: $josefin;
+  color: $baby-blue;
+  font-size: 1.8em;
+  left: 20px;
+}
+
+// cover slide subtitle (small)
+.custom-subtitle3 {
+  font-family: $josefin;
+  color: $baby-blue;
+  font-size: 1.2em;
+  left: 20px;
+}
+
+// slide title (large)
+.slide-title-xl {
+  font-family: $josefin;
+  color: $teal;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+// slide title (large)
+.slide-title {
+  font-family: $josefin;
+  color: $teal;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+// slide title (medium)
+.slide-title2 {
+  font-family: $josefin;
+  color: $teal;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+// slide title (small)
+.slide-title3 {
+  font-family: $josefin;
+  color: $teal;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.large-fa-icon {
+  font-size: 2.5em;
+}
+
+// teal text
+.teal-text {
+  color: $teal;
+}
+
+// josefin font
+.josefin {
+  font-family: $josefin;
+}
+
+// XL body text
+.body-text-xl {
+  font-size: 2em;
+}
+
+// L body text
+.body-text-l {
+  font-size: 1.5em;
+	line-height: 1.9em;
+	margin-bottom: 1em;
+}
+
+// M body text
+.body-text-m {
+	font-size: 1.3em;
+	line-height: 1.3em;
+	margin-bottom: 1em;
+}
+
+// S body text
+.body-text-s {
+  font-size: 20px;
+	line-height: 0.5em;
+}
+
+// XS body text
+.body-text-xs {
+  font-size: 0.5em;
+	line-height: 1.8em;
+}
+
+// center text (horizontally)
+.center-text{
+  text-align: center;
+}
+
+// right-align text
+.right-align-text{
+  text-align: right;
+}
+
+// left-align text
+.left-align-text{
+  text-align: left;
+}
+
+// white text
+.baby-blue-text {
+  color: $baby-blue;
+}

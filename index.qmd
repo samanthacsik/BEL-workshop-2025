@@ -1,12 +1,13 @@
 ---
 format: 
   revealjs:
+    mainfont: Nunito
     slide-number: true
     # code-link: true
     highlight-style: a11y
     chalkboard: true
     theme: 
-      - meds-slides-styles.scss
+      - styles.scss
 editor_options: 
   chunk_output_type: console
 ---
@@ -14,24 +15,44 @@ editor_options:
 
 ## {#title-slide data-menu-title="Title Slide" background="#053660"}
 
-[Data Storytelling]{.custom-title}
+[A ~~picture~~ (thoughtful) chart is worth a thousand words]{.custom-title}
+
+[*Telling stories through data visualization*]{.custom-subtitle2}
 
 <hr class="hr-teal">
 
-[Bren Environmental Leadership Program | Summer 2025]{.custom-subtitle3}
+[Bren Environmental Leadership Program [|]{.teal-text} Summer 2025]{.custom-subtitle3}
+
+*[[Sam Shanny-Csik](https://samanthacsik.github.io){target="_blank"} [|]{.teal-text} Lecturer & Coordinator]{.custom-subtitle3}*
+
+<!-- :::: {.columns}  -->
+
+<!-- ::: {.column width="50%"} -->
+<!-- [Sam Shanny-Csik |]{.custom-subtitle2}<br> -->
+<!-- [Lecturer & Data Training Coordinator]{.custom-subtitle2}<br> -->
+<!-- [*The Bren School*]{.custom-subtitle3 .teal-text} -->
+<!-- ::: -->
+
+<!-- ::: {.column width="50%"} -->
+<!-- [Bren Environmental Leadership Program |]{.custom-subtitle2}<br> -->
+<!-- [Summer 2025]{.custom-subtitle3 .teal-text} -->
+<!-- ::: -->
+
+<!-- :::: -->
 
 ---
 
-## {#tbd data-menu-title="tbd"}
+## {#hello data-menu-title="Hello"}
 
-[Hello!]{.slide-title}
+[Hi, I'm Sam]{.slide-title-xl}
 
 <hr>
+
+*COME BACK TO THIS*
 
 :::: {.columns}
 
 ::: {.column width="50%"}
-<br>
 ```{r}
 #| eval: true
 #| echo: false
@@ -42,59 +63,34 @@ knitr::include_graphics(here::here("images", "sam.png"))
 :::
 
 ::: {.column width="50%"}
-- career journey: undergrad > receptionist / confusion about what I wanted to do in life > grad school > more confusion about what I wanted to do in life > data fellow > MEDS program coordination / teaching
-- teach a data viz course
+- career journey
+
 - personal interests separate from work
+
+- teach a data viz course (which is why I'm here today talking about this topic!)
 :::
 
 ::::
-  
-<!-- --- -->
 
-<!-- [Learning objectives]{.slide-title} -->
+<!-- undergrad > receptionist / confusion about what I wanted to do in life > grad school > more confusion about what I wanted to do in life > data fellow > MEDS program coordination / teaching -->
 
-<!-- (5 min) -->
-
-<!-- - storytelling is so important for connecting audiences with data -->
-<!--   - makes data meaningful, actionable (use quotes / TED talk clips from [EDS 240 slide](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.1-data-stories-slides.html#/why-storytelling)) -->
-<!-- - today, we'll consider  -->
-<!--   - what is data storytelling -->
-<!--   - what can it look like (in the environmental sciences) -->
-<!--   - begin crafting your own data stories based on your BEL research projects -->
-
-<!-- --- -->
-
-<!-- [What is data storytelling?]{.slide-title} -->
-
-<!-- - communicating insights from data using narratives and visualizations -->
-<!--   - in environmental science? using data to create compelling narratives about environmental issues -->
-<!-- - anytime we present data, we have the opportunity to tell a story -->
-<!-- - three key elements:  -->
-<!--   - add context: make it relevant / mean something for *your* audience, narrative, visuals (data viz) -->
-
-<!-- - different mediums (standalone data viz, oral talks, academic journal articles, blogs / popsci or creative writing) -- all require a clear narrative to connect with your intended audience -->
-
-<!-- --- -->
-
-<!-- [Discussion - crafting a story premise]{.slide-title} -->
-
-<!-- (15 min) -->
-
-<!-- Individually  -->
-<!-- - what is your research question? -->
-<!-- - what data are you working with? -->
-<!-- - brainstorm the following:  -->
-<!--   - who are the characters? -->
-<!--   - what is main conflict or challenge? -->
-<!--   - what insights do the data provide> -->
-<!--   - what action do you want to inspire? -->
-
-<!--   With a partner:  -->
-<!--   - share your responses -->
-
-<!-- --- -->
 ---
 
+## {#agenda data-menu-title="Today's Agenda"}
+
+*COME BACK TO THIS* 
+
+Today, I'm going to try to convince you that you can tell a whole story through a static data visualization. We'll: 
+
+- look at / discuss examples
+- chat about strategies for building effective data viz to tell your story
+- begin brainstorming / sketching data viz for your own BEL research projects
+
+
+---
+
+## {#what-comes-to-mind data-menu-title="What comes to mind?"}
+
 <br>
 <br>
 <br>
@@ -103,23 +99,189 @@ knitr::include_graphics(here::here("images", "sam.png"))
 <br>
 <br>
 
-::: {.center-text .body-text-xl .teal-text}
+::: {.center-text .body-text-xl .teal-text .josefin}
 **What first comes to mind when you think of the term, "data visualization?"**
 :::
 
+<br>
+
+::: {.center-text .body-text-m}
+***Chat with a partner!***
+:::
+
+```{r}
+countdown::countdown(
+  minutes = 3,
+  # left = 0, right = 0,
+  # Fanfare when it's over
+  play_sound = TRUE,
+  color_border              = "#FFFFFF",
+  color_text                = "#7aa81e",
+  color_running_background  = "#7aa81e",
+  color_running_text        = "#FFFFFF",
+  color_finished_background = "#ffa07a",
+  color_finished_text       = "#FFFFFF",
+  font_size = "2em",
+  )
+```
+
+---
+
+<br>
+
+>*"...the practice of designing and creating easy-to-communicate and easy-to-understand graphic or visual representations of a large amount of complex quantitative and qualitative data and information with the help of static, dynamic or interactive visual items."*
+
+::: {.right-align-text}
+-from [Wikipedia](https://en.wikipedia.org/wiki/Data_and_information_visualization){target="_blank"}
+:::
+
+. . .
+
+::: {.body-text-m}
+> *"any graphical representation of information and data"*
+:::
+
+::: {.right-align-text}
+-[Cédric Scherer](https://www.cedricscherer.com/){target="_blank"}, [Effective Data Visualization](https://www.youtube.com/watch?v=swzFdMc6WPk){target="_blank"}
+:::
+
+<br>
+
+. . . 
+
+::: {.body-text-m}
+> *"part art and part science"*
+:::
+
+::: {.right-align-text}
+-[Claus O. Wilke](https://clauswilke.com/){target="_blank"}, [Fundamentals of Data Visualization](https://clauswilke.com/dataviz/index.html){target="_blank"}
+:::
+
+---
+
+## {#change-perspective data-menu-title="Change perspective"}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+::: {.center-text .body-text-xl .teal-text .josefin}
+**Have you ever seen a data visualization that changed how you think about an issue?**
+:::
+
+<br>
+
+::: {.center-text .body-text-m}
+***Share this viz with a partner and chat about why!***
+:::
+
+```{r}
+countdown::countdown(
+  minutes = 3,
+  # left = 0, right = 0,
+  # Fanfare when it's over
+  play_sound = TRUE,
+  color_border              = "#FFFFFF",
+  color_text                = "#7aa81e",
+  color_running_background  = "#7aa81e",
+  color_running_text        = "#FFFFFF",
+  color_finished_background = "#ffa07a",
+  color_finished_text       = "#FFFFFF",
+  font_size = "2em",
+  )
+```
+
+---
+
+## {#change-perspective data-menu-title="Change perspective"}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+::: {.center-text .body-text-xl .teal-text .josefin}
+**Let's consider the following examples, which all focus on surface temperature data.**
+:::
+
+<br>
+
+::: {.center-text .body-text-m}
+***With a partner, discuss what (if any) elements inspire feelings (and which feelings!), evoke additional questions, or even potentially inspire action. Is there a narrative that***
+:::
+
 ---
 
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "100%"
+knitr::include_graphics(here::here("images", "ncei-temps.png"))
+```
+
+::: {.footer}
+[Contiguous U.S. Average Temperature](https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/time-series/110/tavg/ytd/12/1895-2025){target="_blank"} from [NCEI's Climate ata. Glance Nation Time Series](https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/time-series/110/tavg/ytd/12/1895-2025){target="_blank"} portal.
+:::
+
+```{r}
+countdown::countdown(
+  minutes = 2,
+  # left = 0, right = 0,
+  # Fanfare when it's over
+  play_sound = TRUE,
+  color_border              = "#FFFFFF",
+  color_text                = "#7aa81e",
+  color_running_background  = "#7aa81e",
+  color_running_text        = "#FFFFFF",
+  color_finished_background = "#ffa07a",
+  color_finished_text       = "#FFFFFF",
+  font_size = "2em",
+  )
+```
+
+---
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-align: "center"
+#| out-width: "80%"
+knitr::include_graphics(here::here("images", "mann-hockeystick.png"))
+```
+
 <br>
 
-::: {.center-text .body-text-xl .teal-text}
-**Have you ever seen a data visualization that changed how you think about an issue?**
+::: {.footer}
+[Hockey stick graph](https://www.psu.edu/news/research/story/iconic-graph-center-climate-debate){target="_blank"}, by Michael Mann & IPCC 2001
 :::
+
+```{r}
+countdown::countdown(
+  minutes = 2,
+  # left = 0, right = 0,
+  # Fanfare when it's over
+  play_sound = TRUE,
+  color_border              = "#FFFFFF",
+  color_text                = "#7aa81e",
+  color_running_background  = "#7aa81e",
+  color_running_text        = "#FFFFFF",
+  color_finished_background = "#ffa07a",
+  color_finished_text       = "#FFFFFF",
+  font_size = "2em",
+  )
+```
 
 ---
 
@@ -130,12 +292,28 @@ knitr::include_graphics(here::here("images", "sam.png"))
 #| echo: false
 #| fig-align: "center"
 #| out-width: "100%"
-knitr::include_graphics(here::here("images", "mann-hockeystick.png"))
+knitr::include_graphics(here::here("images", "ripple-etal-2023-fig1.png"))
 ```
 
 ::: {.footer}
-[Hockey stick graph](https://www.psu.edu/news/research/story/iconic-graph-center-climate-debate), by Michael Mann & IPCC 2001
+[Ripple et al. 2023 (Fig 1)](https://doi.org/10.1093/biosci/biad080){target="_blank"}
 :::
+
+```{r}
+countdown::countdown(
+  minutes = 2,
+  # left = 0, right = 0,
+  # Fanfare when it's over
+  play_sound = TRUE,
+  color_border              = "#FFFFFF",
+  color_text                = "#7aa81e",
+  color_running_background  = "#7aa81e",
+  color_running_text        = "#FFFFFF",
+  color_finished_background = "#ffa07a",
+  color_finished_text       = "#FFFFFF",
+  font_size = "2em",
+  )
+```
 
 ---
 
@@ -150,8 +328,24 @@ knitr::include_graphics(here::here("images", "hawkins-warming-stripes.png"))
 ```
 
 ::: {.footer}
-[Warming Stripes](https://showyourstripes.info/), by Ed Hawkins
+[Warming Stripes](https://showyourstripes.info/){target="_blank"} (Global), by Ed Hawkins
 :::
+
+```{r}
+countdown::countdown(
+  minutes = 2,
+  # left = 0, right = 0,
+  # Fanfare when it's over
+  play_sound = TRUE,
+  color_border              = "#FFFFFF",
+  color_text                = "#7aa81e",
+  color_running_background  = "#7aa81e",
+  color_running_text        = "#FFFFFF",
+  color_finished_background = "#ffa07a",
+  color_finished_text       = "#FFFFFF",
+  font_size = "2em",
+  )
+```
 
 ---
 
@@ -164,8 +358,24 @@ knitr::include_graphics(here::here("images", "ipcc-half.png"))
 ```
 
 ::: {.footer}
-Figure SPM.1c of the [Climate Change 2023 Synthesis Report](https://showyourstripes.info/), by the Intergovernmental Panel on Climate Change (IPCC)
+Figure SPM.1c of the [Climate Change 2023 Synthesis Report](https://www.ipcc.ch/report/ar6/syr/downloads/report/IPCC_AR6_SYR_SPM.pdf), by the Intergovernmental Panel on Climate Change (IPCC)
 :::
+
+```{r}
+countdown::countdown(
+  minutes = 2,
+  # left = 0, right = 0,
+  # Fanfare when it's over
+  play_sound = TRUE,
+  color_border              = "#FFFFFF",
+  color_text                = "#7aa81e",
+  color_running_background  = "#7aa81e",
+  color_running_text        = "#FFFFFF",
+  color_finished_background = "#ffa07a",
+  color_finished_text       = "#FFFFFF",
+  font_size = "2em",
+  )
+```
 
 ---
 
@@ -178,82 +388,121 @@ knitr::include_graphics(here::here("images", "ipcc-full.png"))
 ```
 
 ::: {.footer}
-Figure SPM.1c of the [Climate Change 2023 Synthesis Report](https://showyourstripes.info/), by the Intergovernmental Panel on Climate Change (IPCC)
+Figure SPM.1c of the [Climate Change 2023 Synthesis Report](https://showyourstripes.info/), by the [Intergovernmental Panel on Climate Change](https://www.ipcc.ch/){target="_blank"} (IPCC)
 :::
 
-<!-- --- -->
-
-<!-- <br> -->
-
-<!-- ```{r} -->
-<!-- #| eval: true -->
-<!-- #| echo: false -->
-<!-- #| fig-align: "center" -->
-<!-- #| out-width: "100%" -->
-<!-- knitr::include_graphics(here::here("images", "magtulis-canada-fires.png")) -->
-<!-- ``` -->
-
-<!-- ::: {.footer} -->
-<!-- [Canadian Wildfires (2023)](https://x.com/prinzmagtulis/status/1693684342818574675), by Prinz Magtulis (Reuters) -->
-<!-- ::: -->
-
-<!-- --- -->
-
-<!-- <br> -->
-<!-- <br> -->
-<!-- <br> -->
-<!-- <br> -->
-
-<!-- :::: {.columns} -->
-
-<!-- ::: {.column width="50%"} -->
-<!-- ```{r} -->
-<!-- #| eval: true -->
-<!-- #| echo: false -->
-<!-- #| fig-align: "center" -->
-<!-- #| out-width: "100%" -->
-<!-- knitr::include_graphics(here::here("images", "chalabi-vaquitas.png")) -->
-<!-- ``` -->
-<!-- ::: -->
-
-<!-- ::: {.column width="50%"} -->
-<!-- ```{r} -->
-<!-- #| eval: true -->
-<!-- #| echo: false -->
-<!-- #| fig-align: "center" -->
-<!-- #| out-width: "100%" -->
-<!-- knitr::include_graphics(here::here("images", "chalabi-kingfishers.png")) -->
-<!-- ``` -->
-<!-- ::: -->
-<!-- :::: -->
-
-<!-- ::: {.footer} -->
-<!-- [Endangered Species that could (almost) fit in a single train carriage (Vaquitas)](https://www.theguardian.com/environment/gallery/2018/sep/17/endangered-species-on-a-train), by Mona Chalabi -->
-<!-- ::: -->
+```{r}
+countdown::countdown(
+  minutes = 2,
+  # left = 0, right = 0,
+  # Fanfare when it's over
+  play_sound = TRUE,
+  color_border              = "#FFFFFF",
+  color_text                = "#7aa81e",
+  color_running_background  = "#7aa81e",
+  color_running_text        = "#FFFFFF",
+  color_finished_background = "#ffa07a",
+  color_finished_text       = "#FFFFFF",
+  font_size = "2em",
+  )
+```
 
 ---
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+random, half-baked notes after this point; come back to these 
+
 <br>
 
-::: {.center-text .body-text-xl .teal-text}
-**What about these data visualizations grab your attention? Help you to see the information in a different way? Move you?**
+introduce [worksheets](https://docs.google.com/presentation/d/15v_qDjevDJzaBZVyPFLV_4LF6mWr3WiH6V0WXqiVnbY/edit#slide=id.p) here?
+
+- one for outlining research question, key insights, intended audience 
+- one for brainstorming chart type, text, colors, highligting main takeaway message
+
+---
+
+Steps:
+
+1. choose an appropriate chart type 
+2. 
+
+---
+
+1. choose an appropriate chart type 
+
+- [from Data to Viz](https://www.data-to-viz.com/){target="_blank"}
+- but also don't limit yourself to just these chart types -- see [Data Viz Project](https://datavizproject.com/){target="_blank"}
+- knowing your
+
+Considerations: 
+
+- your audience
+- arrange your data in a way that makes it easy to extract meaning
+
+---
+
+Text: 
+
+- typeface / font matters
+- give your chart a title
+- and annotations
+
+---
+
+::: {.body-text-m}
+>*"The vast amount of **sea ice** covering the Arctic **fluctuates on a seasonal basis**, and the **winter peak marks a turning point** before a melting period during the warmer spring and summer months. Arctic sea ice **typically expands to a maximum in March and shrinks to a minimum in September each year**. The National Snow & Ice Data Center said on Thursday that **this year’s maximum occurred** on Feb. 25, **about two weeks earlier** than the average, barring any unlikely additional growth of ice late in the season."*
 :::
 
-::: {.notes}
-- simplicity
-- context
-- annotations
-- visually-pleasing
-- relatable
+::: {.right-align-text}
+-Derek Watkins in, [Arctic Ice Reaches a Low Winter Maxium](https://www.nytimes.com/interactive/2015/03/24/science/earth/arctic-ice-low-winter-maximum.html?_r=0) (March 2015)
 :::
 
 ---
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+knitr::include_graphics("images/arctic-ice-clear.png")
+```
+
+::: {.footer}
+Source: [Arctic Ice Reaches a Low Winter Maximum](https://www.nytimes.com/interactive/2015/03/24/science/earth/arctic-ice-low-winter-maximum.html?_r=0){target="_blank"} (New York Times, March 2015).
+
+Also check out this great commentary on the above visualization, [Respect your readers’ time](https://www.datawrapper.de/blog/readers-time){target="_blank"} (DataWrapper).
+
+Enjoy the y-axis units on this data viz? Be sure to check out [The Measure of Things](https://www.themeasureofthings.com/default.php){target="_blank"}, a search engine for comparative measurements.
+:::
+
+---
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+knitr::include_graphics("images/arctic-ice.png")
+```
+
+::: {.footer}
+Source: [Arctic Ice Reaches a Low Winter Maximum](https://www.nytimes.com/interactive/2015/03/24/science/earth/arctic-ice-low-winter-maximum.html?_r=0){target="_blank"} (New York Times).
+
+Also check out this great commentary on the above visualization, [Respect your readers’ time](https://www.datawrapper.de/blog/readers-time){target="_blank"} (DataWrapper).
+
+Enjoy the y-axis units on this data viz? Be sure to check out [The Measure of Things](https://www.themeasureofthings.com/default.php){target="_blank"}, a search engine for comparative measurements.
+:::
+
+---
+
+Color:
+
+- use it thoughtfully
+- do you need it?
+- cultural associations
+
+---
+
+Don't be boring / challenge your idea of what a "data visualization" is / can be :)
 
 <br>
 
@@ -325,70 +574,19 @@ knitr::include_graphics(here::here("images", "chalabi-kingfishers.png"))
 
 ---
 
-Deliverable: an outlined data story based on your BEL research project 
+Consider your typeface and color choices
+
+Add here:
+
+- [Ijeamaka's HBCU enrollment plot](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture6.1-typography-slides.html#/anyene-hbcu) (focus on typeface choice)
+- [Climate science palettes + example usage](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture5.2-colors-slides.html#/climate-palettes)
+- [Colours in Culture](https://informationisbeautiful.net/visualizations/colours-in-cultures/)
 
 ---
 
-Need to understand:
+Resources
 
-- **what** is data storytelling?
-- **why** is it important? for environmental scientists?
-- **how** do you approach crafting a data story?
-
----
-
-**what** is data storytelling?
-
-- communicating insights from data using compelling narratives and visualizations
-
----
-
-**why** is it important? 
-
-- “…the very act of telling a story makes people trust you more… Data doesn’t change behavior, emotions do” (-Karen Eber in her TED talk, Why storytelling is more trustworthy than presenting data)
-- 3% of people will walk away from here remembering a stat, 68% of people will remember the story"; "stories create action"; "people act on the back of stories, whereas stats are just stale" (-Mike Bugembe in his TED talk, Lies, racism and sexism: The power of data stories)
-
-(use quotes / TED talk clips from [EDS 240 slide](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture9.1-data-stories-slides.html#/why-storytelling))
-
----
-
-**how** do you approach crafting a data story
-
-1. define your intended **audience** (e.g. domain experts / researchers, policy makers, general public)
-2. consider your **narrative**
-3. build your **visuals**
-4. **highlight takeaways**
-
----
-
-[audience]{.slide-title}
-
-- which story is interesting for them?
-- what are the relevant details to include?
-- which variables are meaningful to them?
-- how will they encounter this information? e.g. data viz (online, in print, etc), oral talk, academic journal article, blog / creative writing?
-
----
-
-[narrative]{.slide-title}
-
----
-
-[visuals]{.slide-title}
-
-- consider data types (include [allison's art](https://eds-240-data-viz.github.io/course-materials/lecture-slides/lecture2.1-choosing-graphic-forms-slides.html#/cat-disc2))
-- use decision tree: [from data to viz](https://www.data-to-viz.com/)
-- but also don't limit yourself to just these options!
-
----
-
-[highlight takeaways]{.slide-title}
-
-- colors 
-  - highlight groups / data points of interest
-  - consider how colors convey information e.g. [Colors in Culture](https://informationisbeautiful.net/visualizations/colours-in-cultures/)
-- typefaces / visual hierarchy
-- annotations
-- images
+- EDS 240 course website resources page
+- GitHub
 
 
